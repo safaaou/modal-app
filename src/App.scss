@@ -1,0 +1,132 @@
+@import "~bootstrap/scss/bootstrap";
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #ffffff;
+}
+
+h4{
+	font-weight: 100;
+  	text-align: center;
+}
+
+/* CONTAINERS */
+
+.container {
+  	max-width: 850px;
+   	width: 100%; 
+    margin: 0 auto;
+}
+.four { 
+  width: 100%; 
+  max-width: 100%;
+}
+
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**.cf {
+    *zoom: 1;
+}**/
+
+/* FORM */
+
+.form .picker input{
+	display: none;
+}
+
+
+
+.form label{
+	position: relative;
+	//padding: 0px 0px;
+	color: #89cca5;
+	background-color: #ffffff;
+	font-size: 14px;
+  	//width: 100%;
+	text-align: center;
+	//height: 50px;
+	//line-height: 50px;
+	display: flex;
+	cursor: pointer;
+  	border-radius: 10px;
+	border: 3px solid #89cca5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .picker input:checked + label {
+	border: 3px solid #8ef3b8;
+	background-color: #89cca5;
+  	color: #ffffff;
+}
+
+
+
+.form .plan input:checked + label:after, form .payment-plan input:checked + label:after, .form .payment-type input:checked + label:after{
+	//content: "\2713";
+	padding: 15px 60px;
+	line-height: 40px;
+	border-radius: 100%;
+	border: 2px solid #333;
+	background-color: #2fcc71;
+	z-index: 999;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+.submit{
+	padding: 6px 30px;
+	display: block;
+	border: none;
+	margin: 20px 5px;
+	float: right;
+	background-color: #2fcc71;
+	color: #fff;
+	//border: 2px solid #333;
+  	border-radius: 5px;
+	font-size: 18px;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.dismiss{
+	padding: 6px 20px;
+	display: block;
+	border: none;
+	margin: 20px 0;
+	float: right;
+	background-color: rgba(146, 149, 150, 0.89);
+	color: #fff;
+	//border: 2px solid #333;
+  	border-radius: 5px;
+	font-size: 18px;
+	&:hover{
+		cursor: pointer;
+	}
+}
